@@ -1,4 +1,4 @@
-# se2-cheat-sheet
+# SE2 CHEAT SHEET für DB-Freerider Aufgabe:
 
 ## Die folgenden Befehle gehören zur Kategorie "MySQL-Verbindung" und ermöglichen das Verbinden zu einer MySQL-Datenbank:</br>
 
