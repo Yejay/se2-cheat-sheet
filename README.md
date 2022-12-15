@@ -52,7 +52,7 @@ Dieser Befehl entzieht dem Benutzer "username" Berechtigungen für die angegeben
 ## Die folgenden Befehle gehören zur Kategorie "Datenbank-Abfragen" und ermöglichen das Abfragen von Daten in der MySQL-Datenbank:</br>
 
 Dieser Befehl zeigt die Benutzer, die Host-IP-Adressen und die Passwörter für alle Benutzer in der MySQL-Datenbank an:</br>
-`+ SELECT User, Host, Password FROM mysql.user;`
+`diff + SELECT User, Host, Password FROM mysql.user;`
     
 Dieser Befehl zeigt alle Spalten für alle Benutzer in der MySQL-Datenbank an:</br>
 `SELECT * FROM mysql.user;`
