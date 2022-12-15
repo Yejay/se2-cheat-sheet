@@ -3,7 +3,7 @@
 Die folgenden Befehle gehören zur Kategorie "MySQL-Verbindung" und ermöglichen das Verbinden zu einer MySQL-Datenbank:
 
 
-Dieser Befehl verbindet sich mit dem MySQL-Server als Benutzer "root" und fordert das Passwort an:     
+Dieser Befehl verbindet sich mit dem MySQL-Server als Benutzer "root" und fordert das Passwort an: 
 `sudo mysql –u root –p`
 
 
