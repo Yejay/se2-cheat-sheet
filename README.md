@@ -78,7 +78,7 @@ Dieser Befehl zeigt die Struktur (Spaltennamen, Datentypen usw.) für die Tabell
 Dieser Befehl zeigt alle Tabellen in der aktuellen Datenbank an:</br>
 `SHOW tables;`
 
-Die folgenden Befehle gehören zur Kategorie "Benutzerverwaltung" und ermöglichen das Ändern von Benutzer-Einstellungen in der MySQL-Datenbank:</br>
+## Die folgenden Befehle gehören zur Kategorie "Benutzerverwaltung" und ermöglichen das Ändern von Benutzer-Einstellungen in der MySQL-Datenbank:</br>
 
 Dieser Befehl ändert das Passwort für den Benutzer "root" auf dem lokalen Computer:</br>
 `ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';`
