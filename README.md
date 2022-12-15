@@ -2,7 +2,8 @@
 
 Die folgenden Befehle gehören zur Kategorie "MySQL-Verbindung" und ermöglichen das Verbinden zu einer MySQL-Datenbank:
 
-    `sudo mysql –u root –p`: Dieser Befehl verbindet sich mit dem MySQL-Server als Benutzer "root" und fordert das Passwort an.
+    sudo mysql –u root –p: 
+    Dieser Befehl verbindet sich mit dem MySQL-Server als Benutzer "root" und fordert das Passwort an.
 
 Die folgenden Befehle gehören zur Kategorie "Benutzerverwaltung" und ermöglichen das Erstellen, Anzeigen und Löschen von Benutzern in der MySQL-Datenbank:
 
