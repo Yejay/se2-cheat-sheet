@@ -28,13 +28,26 @@ Die folgenden Befehle gehören zur Kategorie "Benutzerverwaltung" und ermöglich
 
 Die folgenden Befehle gehören zur Kategorie "Berechtigungsverwaltung" und ermöglichen das Erteilen und Entziehen von Berechtigungen für Benutzer in der MySQL-Datenbank:
 
-    GRANT permission_type ON database.table TO 'username'@'localhost';: Dieser Befehl erteilt dem Benutzer "username" Berechtigungen für die angegebene Datenbank und die angegebene Tabelle.
-    GRANT INSERT ON *.* TO 'username'@'localhost';: Dieser Befehl erteilt dem Benutzer "username" Berechtigungen für das Einfügen von Daten in alle Datenbanken und Tabellen.
-    GRANT INSERT *database_name.table_name* TO 'username'@'localhost';: Dieser Befehl erteilt dem Benutzer "username" Berechtigungen für das Einfügen von Daten in die angegebene Datenbank und die angegebene Tabelle.
-    GRANT ALL PRIVILEGES ON *.* TO 'database_user'@'localhost';: Dieser Befehl erteilt dem Benutzer "database_user" alle Berechtigungen für alle Datenbanken und Tabellen auf dem lokalen Computer.
-    GRANT ALL PRIVILEGES ON database_name.* TO 'database_user'@'localhost';: Dieser Befehl erteilt dem Benutzer "database_user" alle Berechtigungen für alle Tabellen in der Datenbank "database_name" auf dem lokalen Computer.
-    GRANT ALL PRIVILEGES ON database_name.table_name TO 'database_user'@'localhost';: Dieser Befehl erteilt dem Benutzer "database_user" alle Berechtigungen für die Tabelle "table_name" in der Datenbank "database_name" auf dem lokalen Computer.
-    REVOKE permission_type ON database.table TO 'username'@'localhost';: Dieser Befehl entzieht dem Benutzer "username" Berechtigungen für die angegebene Datenbank und die angegebene Tabelle.
+    Dieser Befehl erteilt dem Benutzer "username" Berechtigungen für die angegebene Datenbank und die angegebene Tabelle:
+    GRANT permission_type ON database.table TO 'username'@'localhost';
+    
+    Dieser Befehl erteilt dem Benutzer "username" Berechtigungen für das Einfügen von Daten in alle Datenbanken und Tabellen:
+    GRANT INSERT ON *.* TO 'username'@'localhost';
+    
+    Dieser Befehl erteilt dem Benutzer "username" Berechtigungen für das Einfügen von Daten in die angegebene Datenbank und die angegebene Tabelle:
+    GRANT INSERT *database_name.table_name* TO 'username'@'localhost';
+    
+    Dieser Befehl erteilt dem Benutzer "database_user" alle Berechtigungen für alle Datenbanken und Tabellen auf dem lokalen Computer:
+    GRANT ALL PRIVILEGES ON *.* TO 'database_user'@'localhost';
+    
+    Dieser Befehl erteilt dem Benutzer "database_user" alle Berechtigungen für alle Tabellen in der Datenbank "database_name" auf dem lokalen Computer:
+    GRANT ALL PRIVILEGES ON database_name.* TO 'database_user'@'localhost';
+    
+    Dieser Befehl erteilt dem Benutzer "database_user" alle Berechtigungen für die Tabelle "table_name" in der Datenbank "database_name" auf dem lokalen Computer:
+    GRANT ALL PRIVILEGES ON database_name.table_name TO 'database_user'@'localhost';
+    
+    Dieser Befehl entzieht dem Benutzer "username" Berechtigungen für die angegebene Datenbank und die angegebene Tabelle:
+    REVOKE permission_type ON database.table TO 'username'@'localhost';
 
 Die folgenden Befehle gehören zur Kategorie "Datenbank-Abfragen" und ermöglichen das Abfragen von Daten in der MySQL-Datenbank:
 
