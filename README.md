@@ -1,5 +1,6 @@
-# SE2 CHEAT SHEET für DB-Freerider Aufgabe:
+# SE2 CHEAT SHEET
 
+# Für DB-Freerider Aufgabe:
 ## Die folgenden Befehle gehören zur Kategorie "MySQL-Verbindung" und ermöglichen das Verbinden zu einer MySQL-Datenbank:</br>
 
 Dieser Befehl verbindet sich mit dem MySQL-Server als Benutzer "root" und fordert das Passwort an:</br>
