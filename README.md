@@ -100,3 +100,17 @@ Dieser Befehl importiert die Datei "init_freerider_data.sql" in die MySQL-Datenb
     
 Dieser Befehl importiert die Datei "init_freerider_schema.sql" in die MySQL-Datenbank als Benutzer "root" ohne Passwort:</br>
 `cat /mnt/init_freerider_schema.sql | mysql --user=root --password=`
+
+## Die folgenden Befehle wurden noch nicht in die jeweiligen Kategorien sortiert, aber wurden zur Lösung der Aufgabe häufig verwendet:
+1. `docker exec -it "db-freerider_MySQLServer" /bin/bash` oder `docker exec -it "db-freerider_MySQLServer" bash`
+        Öffnet ein integriertes Terminal im Container.
+2. `mysql -u root -p` oder `mysql --user=root --password=`
+        Meldet einen als root-Benutzer in der Datenbank an.
+3. `SELECT user, host, authentication_string FROM mysql.user;` 
+        Listet alle Benutzer, ihren Host und deren Authentication String (= früher einfach nur password) auf, um zu überprüfen, ob sie existieren.
+        Passwörter werden nicht in plain text angezeigt
+4. `CREATE USER 'freerider'@'localhost' IDENTIFIED BY 'free.ride';`
+        Erstellt einen neuen Benutzer.
+5. `GRANT ALL PRIVILEGES ON FREERIDER_DB.* TO 'freerider'@'localhost';`
+        Gibt dem Benutzer alle Rechte auf unserer Datenbank.
+
