@@ -2,17 +2,29 @@
 
 Die folgenden Befehle gehören zur Kategorie "MySQL-Verbindung" und ermöglichen das Verbinden zu einer MySQL-Datenbank:
 
-    sudo mysql –u root –p: 
-    Dieser Befehl verbindet sich mit dem MySQL-Server als Benutzer "root" und fordert das Passwort an.
+    Dieser Befehl verbindet sich mit dem MySQL-Server als Benutzer "root" und fordert das Passwort an:
+    sudo mysql –u root –p 
+    
 
 Die folgenden Befehle gehören zur Kategorie "Benutzerverwaltung" und ermöglichen das Erstellen, Anzeigen und Löschen von Benutzern in der MySQL-Datenbank:
-
-    CREATE USER 'username' IDENTIFIED BY 'password';: Dieser Befehl erstellt einen neuen Benutzer mit dem Namen "username" und dem Passwort "password".
-    CREATE USER 'username'@'localhost' IDENTIFIED BY 'password';: Dieser Befehl erstellt einen neuen Benutzer mit dem Namen "username" und dem Passwort "password", der sich nur von dem lokalen Computer aus verbinden kann.
-    CREATE USER 'username'@'ip_address' IDENTIFIED BY 'password';: Dieser Befehl erstellt einen neuen Benutzer mit dem Namen "username" und dem Passwort "password", der sich nur von einer bestimmten IP-Adresse aus verbinden kann.
-    CREATE USER 'username'@'%' IDENTIFIED BY 'password';: Dieser Befehl erstellt einen neuen Benutzer mit dem Namen "username" und dem Passwort "password", der sich von jeder IP-Adresse aus verbinden kann.
-    SHOW GRANTS FOR username;: Dieser Befehl zeigt die Berechtigungen für den Benutzer "username" an.
-    DROP USER 'username'@'localhost';: Dieser Befehl löscht den Benutzer "username" und verhindert, dass sich dieser Benutzer von der IP-Adresse "localhost" aus verbinden kann.
+    
+    Dieser Befehl erstellt einen neuen Benutzer mit dem Namen "username" und dem Passwort "password":
+    CREATE USER 'username' IDENTIFIED BY 'password';
+    
+    Dieser Befehl erstellt einen neuen Benutzer mit dem Namen "username" und dem Passwort "password", der sich nur von dem lokalen Computer aus verbinden kann:
+    CREATE USER 'username'@'localhost' IDENTIFIED BY 'password';
+    
+    Dieser Befehl erstellt einen neuen Benutzer mit dem Namen "username" und dem Passwort "password", der sich nur von einer bestimmten IP-Adresse aus verbinden kann:
+    CREATE USER 'username'@'ip_address' IDENTIFIED BY 'password';
+    
+    Dieser Befehl erstellt einen neuen Benutzer mit dem Namen "username" und dem Passwort "password", der sich von jeder IP-Adresse aus verbinden kann:
+    CREATE USER 'username'@'%' IDENTIFIED BY 'password';
+    
+    Dieser Befehl zeigt die Berechtigungen für den Benutzer "username" an:
+    SHOW GRANTS FOR username;
+    
+    Dieser Befehl löscht den Benutzer "username" und verhindert, dass sich dieser Benutzer von der IP-Adresse "localhost" aus verbinden kann:
+    DROP USER 'username'@'localhost';
 
 Die folgenden Befehle gehören zur Kategorie "Berechtigungsverwaltung" und ermöglichen das Erteilen und Entziehen von Berechtigungen für Benutzer in der MySQL-Datenbank:
 
